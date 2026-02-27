@@ -163,9 +163,9 @@ export default function FindVehiclePage() {
       <Box sx={{ bgcolor: 'background.paper', minHeight: '100vh' }}>
         <Container maxWidth="xl" sx={{ py: { xs: 4, md: 6 } }}>
           {/* Back to Home Button */}
-          <Box sx={{ mb: 3 }}>            <Link href="/admin-dashboard" passHref legacyBehavior>
+          <Box sx={{ mb: 3 }}>
+            <Link href="/admin-dashboard" style={{ textDecoration: 'none' }}>
               <Button
-                component="a"
                 startIcon={<ArrowLeft2 size={20} />}
                 sx={{
                   color: 'text.secondary',

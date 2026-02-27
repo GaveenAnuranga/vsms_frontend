@@ -36,7 +36,15 @@ const nextConfig = {
         hostname: '127.0.0.1',
         port: '8000',
         pathname: '/storage/**'
-      }
+      },
+      // Production backend — replace with your actual backend domain
+      ...(process.env.NEXT_PUBLIC_BACKEND_HOSTNAME
+        ? [{
+            protocol: 'https' as const,
+            hostname: process.env.NEXT_PUBLIC_BACKEND_HOSTNAME,
+            pathname: '/storage/**'
+          }]
+        : [])
     ]
   },
 
