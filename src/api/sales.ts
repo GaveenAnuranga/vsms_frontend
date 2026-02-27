@@ -4,7 +4,7 @@ import { useMemo } from 'react';
 import useSWR from 'swr';
 
 // project-imports
-import axiosServices, { fetcher } from 'utils/axios';
+import { fetcher } from 'utils/axios';
 
 // types
 import { Sale, SalesStatistics } from 'types/sales';

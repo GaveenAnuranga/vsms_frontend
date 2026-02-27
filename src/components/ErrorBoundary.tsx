@@ -50,7 +50,7 @@ class ErrorBoundary extends Component<Props, State> {
             Something went wrong
           </Typography>
           <Typography color="text.secondary" sx={{ mb: 3, textAlign: 'center' }}>
-            We're having trouble loading this section. Please try refreshing the page.
+            {"We're having trouble loading this section. Please try refreshing the page."}
           </Typography>
           <Button
             variant="outlined"

@@ -5,6 +5,7 @@ import { useState } from 'react';
 // next
 import { signIn } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 // third-party
 import * as Yup from 'yup';
@@ -351,7 +352,7 @@ export default function Login() {
                       </div>
                       Keep me logged in
                     </label>
-                    <a href="/forgot-password" className="login-forgot">Forgot Password?</a>
+                    <Link href="/forgot-password" className="login-forgot">Forgot Password?</Link>
                   </div>
 
                   <button type="submit" className="login-btn" disabled={isSubmitting}>
